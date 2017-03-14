@@ -1,5 +1,5 @@
 {
-  "name": "base",
+  "name": "adrenalina-studio",
   "version": "2.0.0",
   "description": "Elbit Foundation Base",
   "main": "GulpFile.js",
@@ -40,19 +40,9 @@
   },
   "contributors": [
     {
-      "name": "Cristiano Fromagio",
-      "email": "cristiano@elbit.com.br",
-      "url": "elbit.com.br"
-    },
-    {
       "name": "Eduardo Barros",
       "email": "eduardo@elbit.com.br",
       "url": "dbarjs.github.io"
-    },
-    {
-      "name": "Rafael Spoladore",
-      "email": "rafael@elbit.com.br",
-      "url": "elbit.com.br"
     }
   ],
   "license": "MIT",
