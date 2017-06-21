@@ -1,6 +1,6 @@
 const _PROJECTNAME = 'adrenalina-studio';
 
-var gulp = require('gulp'),
+const gulp = require('gulp'),
 	watch = require('gulp-watch'),
 	batch = require('gulp-batch'),
 	print = require('gulp-print'),
@@ -67,6 +67,11 @@ source.images.largePhotos = {
 	location: source.images.location + 'largePhotos/'
 };
 
+source.images.serviceGalleryPhotos = {
+  content: '*.*',
+  location: source.images.location + 'serviceGallery/'
+};
+
 // Public Content structure
 
 var public = {
@@ -88,6 +93,16 @@ dist.css = {
 dist.js = {
 	content: '*.js',
 	location: dist.location + 'js/'
+};
+
+dist.images = {
+  content: '*.*',
+  location: dist.location + 'img/'
+};
+
+dist.images.serviceGalleryPhotos = {
+  content: '*.*',
+  location: dist.images.location + 'serviceGallery/'
 };
 
 // CSS
@@ -143,6 +158,15 @@ gulp.task('resizePhotos', function () {
 			upscale : false
 		}))
 		.pipe(gulp.dest(dist.location + source.images.largePhotos.location));
+});
+
+gulp.task('resizeServiceGalleryPhotos', function () {
+  gulp.src(source.images.serviceGalleryPhotos.location + source.images.serviceGalleryPhotos.content)
+    .pipe(imageResize({
+      width : 960,
+      upscale : false
+    }))
+    .pipe(gulp.dest(dist.images.serviceGalleryPhotos.location));
 });
 
 gulp.task('tinyPhotosSource', function () {

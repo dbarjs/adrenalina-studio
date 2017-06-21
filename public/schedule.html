@@ -80,7 +80,7 @@
         justify-content: space-between;
         -webkit-flex-flow: row;
         flex-flow: row;
-        padding: 1em 1.3125em;
+        padding: 1em 1.125em;
         margin-bottom: 1em;
         min-height: 6em;
         width: 100%;
@@ -101,14 +101,17 @@
 
     .ScheduleItem-title {
         color: #424242;
-        font-size: 1.3125em;
-        font-weight: 300;
+        font-size: 1.125em;
+        font-weight: 400;
+        max-width: 10rem;
+        line-height: 1.36;
     }
 
     .ScheduleItem-subTitle {
         color: #bdbdbd;
         font-size:.875em;
         font-weight: 400;
+        max-width: 8rem;
     }
 
     .ScheduleItem-time {
@@ -136,7 +139,7 @@
         display: flex;
         height: 1.5em;
         padding: 0 .75em;
-        width: 50%;
+        min-width: 2.25em;
     }
 
     .ScheduleItem-startTime {
@@ -163,16 +166,44 @@
 
         </header>
 
-        <div class="Schedule-item">
+        <div class="Schedule-group">
 
-            <h3 class="Schedule-label">Segunda-feira</h3>
+            <h3 class="Schedule-label">Adrenalina Bike</h3>
 
             <div class="ScheduleItem">
 
                 <div class="ScheduleItem-first">
 
-                    <p class="ScheduleItem-title">Funcional</p>
+                    <p class="ScheduleItem-title">Seg, quarta e sexta</p>
                     <p class="ScheduleItem-subTitle">Parque do Povo</p>
+
+                </div>
+
+                <div class="ScheduleItem-second">
+
+                    <div class="ScheduleItem-time">
+
+                        <div class="ScheduleItem-startTime"><span>18:30</span></div>
+                        <!--<div class="ScheduleItem-endTime"><span>20:00</span></div>-->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="Schedule-group">
+
+            <h3 class="Schedule-label">Funcional</h3>
+
+            <div class="ScheduleItem">
+
+                <div class="ScheduleItem-first">
+
+                    <p class="ScheduleItem-title">Seg, quarta e sexta</p>
+                    <p class="ScheduleItem-subTitle">Academia</p>
 
                 </div>
 
@@ -193,8 +224,8 @@
 
                 <div class="ScheduleItem-first">
 
-                    <p class="ScheduleItem-title">Adrenalina Bike</p>
-                    <p class="ScheduleItem-subTitle">Parque do Povo</p>
+                    <p class="ScheduleItem-title">Terça e quarta</p>
+                    <p class="ScheduleItem-subTitle">Academia</p>
 
                 </div>
 
@@ -202,30 +233,8 @@
 
                     <div class="ScheduleItem-time">
 
-                        <div class="ScheduleItem-startTime"><span>18:00</span></div>
-                        <div class="ScheduleItem-endTime"><span>21:00</span></div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="ScheduleItem">
-
-                <div class="ScheduleItem-first">
-
-                    <p class="ScheduleItem-title">Running</p>
-                    <p class="ScheduleItem-subTitle">Parque do Povo</p>
-
-                </div>
-
-                <div class="ScheduleItem-second">
-
-                    <div class="ScheduleItem-time">
-
-                        <div class="ScheduleItem-startTime"><span>18:00</span></div>
-                        <div class="ScheduleItem-endTime"><span>21:00</span></div>
+                        <div class="ScheduleItem-startTime"><span>19:00</span></div>
+                        <div class="ScheduleItem-endTime"><span>20:00</span></div>
 
                     </div>
 
